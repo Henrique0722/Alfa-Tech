@@ -38,3 +38,46 @@
     }
 }
 
+
+@media screen and (min-width: 992px){
+    .banner{
+        
+    }
+    .item-banner{
+        max-width: 440px;
+        line-height: 30px;
+
+    }
+    .item-banner h2{
+        padding: 20px 0;
+    }
+    .img-banner{
+        height: 450px;
+    }
+    .primeiro-anuncio{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: justify;
+    }
+    .btn-preços {
+        text-align: center;
+        margin-bottom: 12px;
+        padding-top: 15px;
+    }
+
+    .media-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .itens-info{
+        margin: 15px;
+    }
+    .img-info{
+        height: 160px;
+    }
+}
+
