@@ -6,25 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    
     <title>alfa-tech</title>
 </head>
 <body>
 <header class="topo">
-    
-    <div class="itens-topo">
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="assets/logo-icone.png" alt="" height="100px">
+            <div class="tit-principal">
+                <h1>AlfaTech</h1>
+                <p>Soluções em Hospedagem</p>
+            </div>
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Informações</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">planos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> preços</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> contato</a></li>
+            </ul>
+        </div>
 
-        <img src="assets/logo-icone.png" alt="" height="130px">
-            <h1 class="tit-topo">AlfaTech</h1>
-             <p class="p-topo">Soluções em hospedagem</p>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="assets/menu.png" alt=""></button>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+        </ul>
 
+        
     </div>
-    <img src="assets/menu.png" onclick="clickMenu()" alt="" id="burguer" class="burguer">
-        <nav id="itens">
-            <a href="#">INFORMAÇÕES </a>
-            <a href="#">PLANOS</a>
-            <a href="#">PREÇOS</a>
-            <a href="#">CONTATO</a>
-        </nav>
     
 </header>
 
@@ -129,11 +145,19 @@ TEXTO DO RODAPÉ
 <paragrafo> © AlfaTech - Soluções em hospedagem - Todos os direitos reservados
 <paragrafo> Desenvolvido por "nome do aluno"
 
-
     <script>
-        function clickMenu() {
-            itens.style.display = 'block'
-        }
+        function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "assets/img/menu_white_36dp.svg";
+    } else {
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = "assets/menu.png";
+    }
+}
     </script>
+
+    
 </body>
 </html>
