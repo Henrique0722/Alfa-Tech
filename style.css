@@ -50,6 +50,12 @@
     font-size: 1.15rem;
     color: black;
     font-weight: 400;
+    padding: 5px;
+}
+.nav-link:hover{
+    transition: 0.4s;
+    box-shadow: 4px 4px 5px #2f85d6e1;
+    border-radius: 5px;
 }
 
 .mobile-menu-icon {
@@ -106,6 +112,11 @@ line-height: 25px;
     border-radius: 5px;
     text-decoration: none;
     box-shadow: 7px 6px 10px rgba(255, 255, 255, 0.932);
+}
+.btn-preços:hover{
+    transition: 0.4s;
+    color: black;
+    background-color: white;
 }
 .info{
     text-align: center;
