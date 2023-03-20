@@ -149,25 +149,33 @@
      <a href="" class="btn-preços">TABELA DE PREÇOS</a>
 </div>
 
-TEXTO DO RODAPÉ
-
-<titulo> AlfaTech
-<paragrafo> Soluções em hospedagem
-<paragrafo> Telefone & Whatsapp: (21) 99999-5555
-<paragrafo> E-mail: suporte@alfatech.com
-<paragrafo> Endereço: Av Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro
-<paragrafo> © AlfaTech - Soluções em hospedagem - Todos os direitos reservados
-<paragrafo> Desenvolvido por "nome do aluno"
+<footer class="rodape">
+    <div class="logo-rodape">
+        <img src="assets/logo-icone.png" alt="" height="100px">
+        <div class="tit-principal">
+            <h1>AlfaTech</h1>
+            <p>Soluções em Hospedagem</p>
+        </div>
+    </div>
+    <div class="p-rodape">
+        <p>Telefone & Whatsapp: (21) 99999-5555</p>
+         <p>E-mail: suporte@alfatech.com</p>
+           <p>Endereço: Av Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro</p>
+         <p>© AlfaTech - Soluções em hospedagem - Todos os direitos reservados</p>
+    
+    <p>Desenvolvido por <a href="https://github.com/Henrique0722" target="_blank">Henrique Daniel</a></p>
+</div>
+</footer>
 
     <script>
         function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "assets/img/menu_white_36dp.svg";
+        document.querySelector('.icon').src = "assets/menu.png";
     } else {
         menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "assets/menu.png";
+        document.querySelector('.icon').src = "assets/close.png";
     }
 }
     </script>
